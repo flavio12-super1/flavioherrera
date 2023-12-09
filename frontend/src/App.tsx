@@ -16,7 +16,7 @@ function App() {
             <div>This website was put together last minute 😵‍💫</div>
             <img
               src="https://d10jdocmg93kuh.cloudfront.net/20/8d/208d7839-f970-4fcd-965e-4e1dc9ec33fa.jpg"
-              alt=""
+              alt="4"
             />
             <br />
             <div>
@@ -35,7 +35,7 @@ function App() {
             <div>
               <img
                 src="https://upload-image-demo-fh.s3.amazonaws.com/18c429f606b13bb19a58632642879a9f784fe47bd9e85eefb5f2ea208f7d278e"
-                alt=""
+                alt="5"
                 className="myImage"
               />
             </div>
@@ -47,7 +47,7 @@ function App() {
             <div>
               <img
                 src="https://upload-image-demo-fh.s3.amazonaws.com/0ac66bd4cb740906b380561ef408c517d7f332f8982fc6a5b66be901f06b0943"
-                alt=""
+                alt="6"
                 className="myImage"
               />
             </div>
@@ -67,19 +67,19 @@ function App() {
             <div>
               <img
                 src="https://upload-image-demo-fh.s3.amazonaws.com/b67df1cf8bece68acb2e1994c304a449f58a24ca1b65262d316cc165c6b299bc"
-                alt=""
+                alt="7"
                 className="myImage"
               />
               <br />
               <img
                 src="https://upload-image-demo-fh.s3.amazonaws.com/422a58ff3bbfa688419993f4042527bb7b609c49d3d336dceac5a44d1723471f"
-                alt=""
+                alt="8"
                 className="myImage"
               />
               <br />
               <img
                 src="https://upload-image-demo-fh.s3.amazonaws.com/163969a3f8b339e9de7c10facc0c739e3c145987c1a1106c7ad1809f969dfea2"
-                alt=""
+                alt="9"
                 className="myImage"
               />
             </div>
@@ -92,6 +92,7 @@ function App() {
               src="
             https://upload-image-demo-fh.s3.amazonaws.com/98888a6a2b2627a82179499218d1ef837de15dbafdebb7e42090485203183c03"
               className="myImage"
+              alt="image10"
             />
             <br />
             <span>
