@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outerDiv {
+  display: flex;
+  width: 90%;
+  height: calc(100% - 40px);
+  flex-direction: column;
+  background-color: black;
+  color: lime;
+  font-weight: 900;
+  font-family: monospace;
+  max-width: 900px;
+  margin: 20px;
+  overflow-y: scroll;
+}
+
+.innerDiv {
+  overflow-y: scroll;
+}
+
+.background {
+  background-image: url("../assets/background.gif");
+}
+
+.padding {
+  padding: 20px;
+}
+
+.myImage {
+  width: 90%;
+  border: solid 1px pink;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: "red";
+  border-radius: 6px;
+  border: 3px solid #555;
+}
