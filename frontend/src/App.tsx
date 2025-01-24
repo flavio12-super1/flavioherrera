@@ -13,7 +13,7 @@ function App() {
             I am a Full Stack Developer, well um kinda
           </div>
           <div className="">
-            <div>This website was put together last minute 😵‍💫</div>
+            <div>This website was put together last minute 😵‍💫 small update</div>
             <img
               src="https://d10jdocmg93kuh.cloudfront.net/20/8d/208d7839-f970-4fcd-965e-4e1dc9ec33fa.jpg"
               alt="4"
