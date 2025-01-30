@@ -37,6 +37,26 @@ app.use(express.json());
 // Serve static files from the "build" directory
 app.use(express.static(path.resolve(__dirname, "./frontend/build")));
 
+app.get("/get_wait_time", (req, res) => {
+  try {
+    let ft_minutes = parseFloat(req.query.ft_minutes) || 1;
+    let hour = parseInt(req.query.hour) || 0;
+    let minute = parseInt(req.query.minute) || 0;
+
+    // Define peak traffic hours (3 PM, 4 PM, 5 PM ± 5 minutes)
+    const peak_hours = [15, 16, 17];
+    const is_peak = peak_hours.includes(hour) && (minute >= 45 || minute <= 5);
+
+    // Adjust travel time
+    let wait_time = is_peak ? ft_minutes : ft_minutes * 1.2;
+
+    res.json({ wait_time });
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).json({ wait_time: 999 }); // Send 999 if there's an error
+  }
+});
+
 // API endpoint to fetch faculty meeting times
 app.get("/api/facultyMeetingTimes", async (req, res) => {
   const { term, crn } = req.query;
